@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "tsup src/**/*.ts --out-dir dist --format esm",
+    "prestart": "npm run build",
     "start": "node dist/main.js",
     "dev": "tsx src/main.ts",
     "dev:watch": "tsx watch src/main.ts",
