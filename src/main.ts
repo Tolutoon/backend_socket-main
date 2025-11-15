@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { createServer } from 'http';
-import { logger } from './utils/logger';
+import { logger } from './utils/logger.js';
 import { formatSuccess } from './utils/response';
 import { initializeWebRTCServer } from './features/webrtc/socket-server';
 import webrtcRouter from './features/webrtc/routes/webrtc_route';
