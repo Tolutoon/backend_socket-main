@@ -4,11 +4,11 @@ import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { createServer } from 'http';
-import { logger } from './utils/logger';
-import { formatSuccess } from './utils/response';
-import { initializeWebRTCServer } from './features/webrtc/socket-server';
-import webrtcRouter from './features/webrtc/routes/webrtc_route';
-import { errorHandler } from './middleware/errorHandler';
+import { logger } from './utils/logger.js';
+import { formatSuccess } from './utils/response.js';
+import { initializeWebRTCServer } from './features/webrtc/socket-server.js';
+import webrtcRouter from './features/webrtc/routes/webrtc_route.js';
+import { errorHandler } from './middleware/errorHandler.js';
 
 // Get directory paths
 const __filename = fileURLToPath(import.meta.url);
