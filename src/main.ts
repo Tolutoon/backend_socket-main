@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { createServer } from 'http';
 import { logger } from './utils/logger.js';
-import { formatSuccess } from './utils/response';
+import { formatSuccess } from './utils/response.js';
 import { initializeWebRTCServer } from './features/webrtc/socket-server';
 import webrtcRouter from './features/webrtc/routes/webrtc_route';
 import { errorHandler } from './middleware/errorHandler';
